@@ -5,6 +5,7 @@ body{
 header{
     height: 65px;
     background-color: #0c5df3;
+    background-image: url("backround 2.jpeg");
     color: white;
     display: flex;
     align-items: flex-start;
