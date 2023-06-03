@@ -58,6 +58,7 @@ header{
     align-items: center;
     width: 40%;
     background-color: #022f83;
+    background-image: url("backround 2.jpg");
 }
 .caja-presentacion{
     display: flex;
