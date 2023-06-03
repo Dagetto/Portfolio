@@ -83,7 +83,7 @@ header{
     padding-right: 20%;
 }
 .aptitudes{
-    width: auto;
+    width: 50%;
 }
 .tech-list{
     display: flex;
@@ -93,6 +93,7 @@ header{
 
 .tech{
     height: 90px;
+    border-radius: 50px;
 }
 
 .tres{
