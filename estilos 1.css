@@ -39,6 +39,7 @@ header{
     height: calc(100vh - 65px);
     background-color: #09275e;
     color: white;
+    background-image: url("backround image.jpg");
     /* padding-top: 10%; */
 }
 
