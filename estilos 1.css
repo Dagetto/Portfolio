@@ -117,24 +117,83 @@ header{
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
+    position: relative; /* Establece la posición relativa para los elementos hijos posicionados absolutamente */
     transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
 }
 
 .card:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% cuando se pasa el cursor */
 }
-.card img{
+
+.card {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative; /* Establece la posición relativa para los elementos hijos posicionados absolutamente */
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% cuando se pasa el cursor */
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative; /* Establece la posición relativa para los elementos hijos posicionados absolutamente */
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% cuando se pasa el cursor */
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative; /* Establece la posición relativa para los elementos hijos posicionados absolutamente */
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% cuando se pasa el cursor */
+}
+
+.card img {
     width: 100%;
 }
+
+.card::after {
+    content: attr(data-description); /* Agrega la descripción */
+    position: absolute; /* Posiciona el elemento de manera absoluta */
+    top: 0; /* Lo coloca al inicio de la tarjeta */
+    right: 100%; /* Lo coloca a la izquierda de la tarjeta */
+    width: 100%; /* Ancho igual al de la tarjeta */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el relleno en el tamaño total */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+}
+
+.card:hover::after {
+    opacity: 1; /* Muestra la descripción cuando se pasa el cursor */
+}
+
 .card a, footer a {
     color: white;
 }
 
-.red-social{
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
+
 
 footer{
     background-color: #022f83;
