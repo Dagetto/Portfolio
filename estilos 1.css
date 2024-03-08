@@ -107,8 +107,9 @@ header{
     background-image: url("backround 2.jpeg");
 }
 .proyectos{
-    width: 60%;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
 .card {
